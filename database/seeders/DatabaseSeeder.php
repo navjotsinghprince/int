@@ -31,5 +31,10 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@user.com',
             'password' => Hash::make("12345"),
         ]);
+
+        $this->call([
+            CategorySeeder::class,
+            PostSeeder::class,
+        ]);
     }
 }

@@ -1,0 +1,8 @@
+PHP VERSION = 8.4.5
+COMPOSER VERSION = 2.8.5
+LARAVEL VERSION = 12.9.2
+
+
+composer install
+php artisan migrate
+php artisan db:seed
